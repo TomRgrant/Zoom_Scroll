@@ -1,0 +1,27 @@
+.flo-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border: 1px solid firebrick;
+    width: 20rem;
+    height: 20rem;
+    background-color: aqua;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.float-area {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(237, 192, 132, 0.575);
+}
