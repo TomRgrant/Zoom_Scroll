@@ -22,17 +22,17 @@ const scroll = (e) => {
 
     let currentPosition2 = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--move-div-2"))
     console.log(currentPosition2);
-    currentPosition2 = currentPosition2 + 5;
+    currentPosition2 = currentPosition2 - 2;
     document.documentElement.style.setProperty("--move-div-2", `${currentPosition2.toString()}%`)
 
     let currentPosition3 = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--move-div-3"))
     console.log(currentPosition3);
-    currentPosition3 = currentPosition3 + 5;
+    currentPosition3 = currentPosition3 - 6;
     document.documentElement.style.setProperty("--move-div-3", `${currentPosition3.toString()}%`)
 
     let currentPosition4 = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--move-div-4"))
     console.log(currentPosition4);
-    currentPosition4 = currentPosition4 + 5;
+    currentPosition4 = currentPosition4 + 8;
     document.documentElement.style.setProperty("--move-div-4", `${currentPosition4.toString()}%`)
     }
         }
@@ -50,17 +50,17 @@ if (e.deltaY < 0) {
 
     let currentPosition2 = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--move-div-2"))
     console.log(currentPosition2);
-    currentPosition2 = currentPosition2 - 5;
+    currentPosition2 = currentPosition2 + 2;
     document.documentElement.style.setProperty("--move-div-2", `${currentPosition2.toString()}%`)
 
     let currentPosition3 = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--move-div-3"))
     console.log(currentPosition3);
-    currentPosition3 = currentPosition3 - 5;
+    currentPosition3 = currentPosition3 + 6;
     document.documentElement.style.setProperty("--move-div-3", `${currentPosition3.toString()}%`)
 
     let currentPosition4 = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--move-div-4"))
     console.log(currentPosition4);
-    currentPosition4 = currentPosition4 - 5;
+    currentPosition4 = currentPosition4 - 8;
     document.documentElement.style.setProperty("--move-div-4", `${currentPosition4.toString()}%`)
     }
     console.log('agggggggggggggggg',num);
