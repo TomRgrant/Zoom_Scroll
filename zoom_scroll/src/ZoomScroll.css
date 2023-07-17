@@ -1,24 +1,43 @@
 :root {
     --div-scale: 1;
+    --move-div-1: 50%;
+    --move-div-2: 50%;
+    --move-div-3: 50%;
+    --move-div-4: 50%;
 }
 
 .flo-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    border: 1px solid firebrick;
     width: 20rem;
     height: 20rem;
     background-color: aqua;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(var(--div-scale));
     display: flex;
     justify-content: center;
     align-items: center;
-    scale: var(--div-scale);
+    border: 1px solid firebrick;
+    padding: 2rem;
+    border-radius: 40px;
+  }
+
+.div-1 {
+    top: var(--move-div-1);
+    left: var(--move-div-1);
+}
+
+.div-2 {
+    top: var(--move-div-2);
+    left: var(--move-div-2);
+}
+
+.div-3 {
+    top: var(--move-div-3);
+    left: var(--move-div-3);
+}
+
+.div-4 {
+    top: var(--move-div-4);
+    left: var(--move-div-4);
 }
 
 h2 {
@@ -29,5 +48,5 @@ h2 {
     height: 100%;
     width: 100%;
     background-color: rgba(237, 192, 132, 0.575);
-    overflow-y: scroll;
+    overflow: hidden;
 }
