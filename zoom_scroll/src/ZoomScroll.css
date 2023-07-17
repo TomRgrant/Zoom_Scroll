@@ -1,3 +1,7 @@
+:root {
+    --div-scale: 1;
+}
+
 .flo-div {
     display: flex;
     justify-content: center;
@@ -14,6 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    scale: var(--div-scale);
 }
 
 h2 {
@@ -24,4 +29,5 @@ h2 {
     height: 100%;
     width: 100%;
     background-color: rgba(237, 192, 132, 0.575);
+    overflow-y: scroll;
 }
