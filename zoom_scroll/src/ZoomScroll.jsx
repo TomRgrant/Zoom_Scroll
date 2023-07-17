@@ -5,15 +5,25 @@ const ZoomScroll = () => {
 
     let num = 1
 
+
 const scroll = (e) => {
-    console.log(num);
-    document.documentElement.style.setProperty("--div-scale", num);
-    if (e.deltaY > 0){
-        num = num + 0.1;
-    } else {
-        num = num - 0.1;
+    if (e.deltaY > 0) {
+        const currentScale = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--div-scale"));
+        if (currentScale + 0.1 < 2) {
+          num = currentScale + 0.1;
+          document.documentElement.style.setProperty("--div-scale", num.toString());
+        }
+      }
+
+if (e.deltaY < 0) {
+    const currentScale = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--div-scale"));
+    if (currentScale - 0.1 > 0.1) {
+      num = currentScale - 0.1;
+      document.documentElement.style.setProperty("--div-scale", num.toString());
     }
+  }
 }
+
 
 
     return(
