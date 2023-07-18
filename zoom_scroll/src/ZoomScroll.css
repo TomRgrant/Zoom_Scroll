@@ -24,6 +24,7 @@
     border-radius: 40px;
     top: var(--move-div-1-y);
     left: var(--move-div-1-x);
+    transition-duration: 0.5s;
   }
   
   .div-2 {
