@@ -1,12 +1,16 @@
 :root {
     --div-scale: 1;
-    --move-div-1: 50%;
-    --move-div-2: 50%;
-    --move-div-3: 50%;
-    --move-div-4: 50%;
-}
-
-.flo-div {
+    --move-div-1-x: 50%;
+    --move-div-2-x: 50%;
+    --move-div-3-x: 50%;
+    --move-div-4-x: 50%;
+    --move-div-1-y: 50%;
+    --move-div-2-y: 50%;
+    --move-div-3-y: 50%;
+    --move-div-4-y: 50%;
+  }
+  
+  .flo-div {
     width: 20rem;
     height: 20rem;
     background-color: aqua;
@@ -18,35 +22,33 @@
     border: 1px solid firebrick;
     padding: 2rem;
     border-radius: 40px;
+    top: var(--move-div-1-y);
+    left: var(--move-div-1-x);
   }
-
-.div-1 {
-    top: var(--move-div-1);
-    left: var(--move-div-1);
-}
-
-.div-2 {
-    top: var(--move-div-2);
-    left: var(--move-div-2);
-}
-
-.div-3 {
-    top: var(--move-div-3);
-    left: var(--move-div-3);
-}
-
-.div-4 {
-    top: var(--move-div-4);
-    left: var(--move-div-4);
-}
-
-h2 {
+  
+  .div-2 {
+    top: var(--move-div-2-y);
+    left: var(--move-div-2-x);
+  }
+  
+  .div-3 {
+    top: var(--move-div-3-y);
+    left: var(--move-div-3-x);
+  }
+  
+  .div-4 {
+    top: var(--move-div-4-y);
+    left: var(--move-div-4-x);
+  }
+  
+  h2 {
     font-size: 3rem;
-}
-
-.float-area {
+  }
+  
+  .float-area {
     height: 100%;
     width: 100%;
     background-color: rgba(237, 192, 132, 0.575);
     overflow: hidden;
-}
+  }
+  
